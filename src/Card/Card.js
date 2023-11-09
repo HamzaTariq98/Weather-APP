@@ -21,7 +21,7 @@ const Card = (props) => {
 
     return (
         <div className="weather-card">
-            <div className="close"><a onClick={props.removeCard} ><img src="/imgs/close.png" alt="close" className={`${props.value}`}/></a></div>
+            <div className="close"><a onClick={props.removeCard} ><img src="/Weather-APP/imgs/close.png" alt="close" className={`${props.value}`}/></a></div>
             
             <div className="row">
                 
