@@ -1,0 +1,9 @@
+button{
+    margin-left: 15px;
+}
+
+.settings-div {
+    display: flex;
+    align-items: center;
+    /* Additional styles for horizontal centering if needed */
+  }

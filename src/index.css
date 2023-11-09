@@ -1,0 +1,18 @@
+
+body, html{
+  margin-top: 15px;
+  font-family: monospace;
+  background: linear-gradient(90deg, rgb(184, 201, 255), rgb(199, 236, 255));
+}
+
+
+div.col.header{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
