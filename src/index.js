@@ -55,7 +55,7 @@ function Root() {
   const removeCard = async (event)=> {
     setUserData(null);
     let index = parseInt(event.target.className)
-    await fetch(`http://127.0.0.1:3005/removeCard/${email}/${index}`)
+    await fetch(`${apiUrl}/removeCard/${email}/${index}`)
     .then(response => response.json)
     .then(() => fetchEmailData(email))
   }
