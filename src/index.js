@@ -8,7 +8,7 @@ import Cards from './Cards/Cards';
 import Scroll from './scroll'
 
 
-const apiUrl = 'http://127.0.0.1:3005'
+const apiUrl = 'https://weather-api-clzi.onrender.com'
 function Root() {
   const fetchEmailData = async (email) => {
     console.log(email)
