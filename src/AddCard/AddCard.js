@@ -6,6 +6,7 @@ const AddCard = (props) =>{
     return(
         <div className="add-weather-card" onClick={props.addNewCard}>
             <img src="/Weather-APP/imgs/add.png" alt="weather" />
+            Add Card
         </div>
     )
 } 

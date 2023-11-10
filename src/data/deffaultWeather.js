@@ -1,5 +1,5 @@
 module.exports = {
-    locationName: 'Select Location',
+    locationName: 'Change Location',
     days: [
          {
             day: 'Tue',
