@@ -32,7 +32,7 @@ function Root() {
 
   setTimeout(() => {
     setLongLoading(true);
-  }, 3000);
+  }, 15000);
 
 
   async function firstRun() {

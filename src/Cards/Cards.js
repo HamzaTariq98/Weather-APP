@@ -5,9 +5,13 @@ import './Cards.css'
 
 const Cards = (props) =>{
 
-    if (props.longLoading & props.email === 'user1'){
+    if (props.longLoading){
         return (
-            <div>Loading..... the app built completely on free platforms, will take couple of seconds when first loading</div>
+            <div>
+                <div>Loading.....</div>
+                <br />
+                <div>Please refresh the page if taking so long</div>
+            </div>
         )
     }
 
