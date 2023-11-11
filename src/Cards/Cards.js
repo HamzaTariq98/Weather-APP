@@ -5,7 +5,7 @@ import './Cards.css'
 
 const Cards = (props) =>{
 
-    if (props.longLoading){
+    if (props.longLoading && props.email === 'user1'){
         return (
             <div>
                 <div>Loading.....</div>
