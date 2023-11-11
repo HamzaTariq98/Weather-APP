@@ -11,7 +11,6 @@ import Scroll from './scroll'
 const apiUrl = 'https://weather-api-clzi.onrender.com'
 function Root() {
   const fetchEmailData = async (email) => {
-    console.log(email)
     setEmail(email);
     try {
       const response = await fetch(apiUrl+`/add/${email}`);
@@ -29,6 +28,11 @@ function Root() {
 
   const [email, setEmail] = useState('user1');
   const [userData, setUserData] = useState(null);
+  const [longLoading, setLongLoading] = useState(false);
+
+  setTimeout(() => {
+    setLongLoading(true);
+  }, 3000);
 
 
   async function firstRun() {
@@ -36,6 +40,7 @@ function Root() {
           .then((response) => response.text())
           .then((userIp) => {
             fetchEmailData(userIp)
+            
     })
   }
  
@@ -85,7 +90,7 @@ function Root() {
         <div className="row">
           <div>
             <Scroll>
-              <Cards userData = {userData} addNewCard= {addNewCard} removeCard={removeCard} changeLocation ={changeLocation}/>
+              <Cards longLoading= {longLoading} email={email} userData = {userData} addNewCard= {addNewCard} removeCard={removeCard} changeLocation ={changeLocation}/>
             </Scroll>
           </div>
         </div>

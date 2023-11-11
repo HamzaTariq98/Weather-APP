@@ -5,11 +5,20 @@ import './Cards.css'
 
 const Cards = (props) =>{
 
+    if (props.longLoading & props.email === 'user1'){
+        return (
+            <div>Loading..... the app built completely on free platforms, will take couple of seconds when first loading</div>
+        )
+    }
+
     if (props.userData === null){
         return (
             <div>Loading.....</div>
         )
     }
+
+
+
     const cardsArray = props.userData.map((card,i) => {
         return < Card key= {i} location = {card} value = {i} removeCard={props.removeCard} changeLocation={props.changeLocation}/>
     })
