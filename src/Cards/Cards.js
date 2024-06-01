@@ -10,7 +10,7 @@ const Cards = (props) =>{
             <div>
                 <div>Loading.....</div>
                 <br />
-                <div>Please refresh the page if taking so long</div>
+                <div>due to using free backend providers first page loading might take up to a minute, please wait.....</div>
             </div>
         )
     }

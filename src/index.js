@@ -8,7 +8,9 @@ import Cards from './Cards/Cards';
 import Scroll from './scroll'
 
 
-const apiUrl = 'https://teal-difficult-basket-clam.cyclic.app'
+// const apiUrl = 'https://teal-difficult-basket-clam.cyclic.app'
+
+const apiUrl = 'https://weather-api-clzi.onrender.com'
 function Root() {
   const fetchEmailData = async (email) => {
     setEmail(email);
